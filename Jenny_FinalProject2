@@ -1,0 +1,64 @@
+# Project Design Writeup and Approval Template
+
+Follow this as a guide to completing the project design writeup. The questions for each section are merely there to suggest what the baseline should cover; be sure to use detail as it will make the project much easier to approach as the class moves on.
+
+### Project Problem and Hypothesis
+* What's the project about? What problem are you solving?
+The project is about trying to determine if there is a correlation between certain factors (race, major, income, etc) and compatibility in the world of speed dating. I think major is a major predictive compatiblity factor. 
+
+* Where does this seem to reside as a machine learning problem? Are you predicting some continuous number, or predicting a binary value?
+Predicting a continuous number, because we are trying to identify the most "compatible" major pairings by finding correlation.  
+
+* What kind of impact do you think it could have?
+Speed dating algorithims and pairings -- I think it would improve the efficiency of speed dating. Usually there are too many participants and is impossible for each participant to meet every other participant. If you knew that certain majors were more compatible or uncompatible, you could encourage or discourage pairs from being set up. 
+
+* What do you think will have the most impact in predicting the value you are interested in solving for?
+I think undergraduate major would have a high impact in predicting the correlation value. 
+
+### Datasets
+* Description of data set available, at the field level (see table)
+There is a CSV file from Kaggle - which includes exstensive information about each participant, such as his/her age, race, income, etc. The CSV file also includes scorecard information -- which is basically data on how each participant feels about the partners he/she met throughout the event. 
+
+* If from an API, include a sample return (this is usually included in API documentation!) (if doing this in markdown, use the javacription code tag)
+N/A
+
+### Domain knowledge
+* What experience do you already have around this area?
+N/A 
+* Does it relate or help inform the project in any way?
+* What other research efforts exist?
+    * Use a quick Google search to see what approaches others have made, or talk with your colleagues if it is work related about previous attempts at similar problems.
+    * This could even just be something like "the marketing team put together a forecast in excel that doesn't do well."
+    * Include a benchmark, how other models have performed, even if you are unsure what the metric means.
+
+### Project Concerns
+* What questions do you have about your project? What are you not sure you quite yet understand? (The more honest you are about this, the easier your instructors can help).
+There is a lot of data - some of which I'm not sure how relevant is to what I want to analyze. I think it will take quite some time to interpret and fully understand the data. 
+
+* What are the assumptions and caveats to the problem?
+    * What data do you not have access to but wish you had?
+I wish I knew if they were "successful" - we have scorecards so we know how people feel about each other after the date, but it would be nice to know if any of them actually became a couple or friends aftewards.
+
+    * What is already implied about the observations in your data set? For example, if your primary data set is twitter data, it may not be representative of the whole sample (say, predicting who would win an election)
+It's only limited to the people who participated in this particular speed dating round/event. It's also just looking at people who are participating in speed dating, so it may be biased.  
+
+* What are the risks to the project?
+    * What's the cost of your model being wrong? (What's the benefit of your model being right?)
+People are unhappy with the quality of their partners during the speed dating events. 
+
+    * Is any of the data incorrect? Could it be incorrect?
+There may be missing data! I'll have to go in and check to see that there are no missing values for rows. I am aware that some majors have multiple names so it'll be important to comb the data to make sure everything is aligned. 
+
+### Outcomes
+* What do you expect the output to look like?
+To be honest, I am not sure! I think there is a correlation between major and compatbility, but there are other things that will impact major - such as school, job, etc. Collinearity may possibly an issue! 
+* What does your target audience expect the output to look like?
+N/A
+* What gain do you expect from your most important feature on its own?
+N/A 
+* How complicated does your model have to be?
+N/A
+* How successful does your project have to be in order to be considered a "success"?
+An acceptable R^2 value (over .8) I would consider successful.
+* What will you do if the project is a bust (this happens! but it shouldn't here)?
+I will submit it on Kaggle :D 
